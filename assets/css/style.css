@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d9dcd6;
+}
+
+/* Note: changed colors of varius sections compared to original to make page more cohesive */
+
+/* Styles for Main container */
+/* applied flex-wrap to allow content in main to wrap when window is made smaller */
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Styles for Header */
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2589bd;
+    color: #ffffff;
+    /* fixed the header to the top of the page */
+    position: fixed;
+    /* set width of header to 100% of the page */
+    width:100%;   
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+header h1 .seo {
+    color: #e4ec95;
+}
+/* Styles for Nav Bar */
+nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+/* Styles for Footer */
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    background-color: #2589bd;
+}
+/* Altered footer styles for cohesivity */
+footer h2,footer p {
+    font-size: 20px;
+    background-color: #2589bd;
+}
+/* Float styles for benefits and content elements */
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+/* Styles for content class */
+.content {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    background-color:#d9dcd6;
+    text-align: center;
+}
+/* Styles for benefits class */
+.benefits {
+    margin: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    border: 15px solid #2589bd;
+    text-align: center;
+}
+/* consolodated classes with the same style*/
+.benefit-lead,
+.benefit-brand,
+.benefit-cost {
+    margin-bottom: 36px;
+    color: #ffffff;
+}
+/* consolodated classes with the same style*/
+.benefit-lead h3,
+.benefit-brand h3,
+.benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* consolodated classes with the same style*/
+.benefit-lead img,
+.benefit-brand img,
+.benefit-cost img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+/* Hero image styles, added margin-top to Hero image for minimal overlap with fixed Header*/
+#hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    margin-top: 96px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+/* consolodated content id's with the same style*/
+/* note: added borders to content containers */
+#online-reputation-management, 
+#search-engine-optimization, 
+#social-media-marketing {
+    margin-bottom: 20px;
+    padding: 20px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+    border: 15px solid #2589bd;
+}
+
+/* consolodated content img id's with the same style*/
+#search-engine-optimization img,
+#online-reputation-management img,
+#social-media-marketing img{
+    max-height: 100%;
+    flex: 1;
+
+}
+
+/* consolodated content headers with the same style*/
+#search-engine-optimization h2,
+#online-reputation-management h2,
+#social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+
+
+
+   
+
+
+
